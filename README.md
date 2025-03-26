@@ -15,7 +15,10 @@ Easily add and remove tasks with a **clean UI** and **responsive design**. 📱�
 
 ---
 
-## 📸 Preview  
+## 🚀 Live Preview  
+🔗 **[Click Here to View Live](https://abishekkhanna.github.io/To-Do-Task-Manager/)** 
+
+## 📸 Screenshots  
 
 ![](https://github.com/Abishekkhanna/To-Do-Task-Manager/blob/main/Screenshot%20(93).png)
 👆 The tasks appear **dynamically** with an interactive delete button! 🎉  
