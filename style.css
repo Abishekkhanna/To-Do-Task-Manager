@@ -1,0 +1,118 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.con{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+}
+h1{
+    font-size: 35px;
+    margin-top: 15px;
+}
+.ip{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    column-gap: 10px;
+}
+input{
+    width: 250px;
+    padding: 15px;
+    font-size: 18px;
+    outline: none;
+    border-radius: 35px;
+    border: 2px solid #ccc;
+}
+
+input:focus {
+    border-color: #9d9d9d;
+    box-shadow: 0 0 5px #9d9d9d;
+}
+.ip button{
+    width: 90px;
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 35px;
+    outline: none;
+    border: 1px solid grey;
+    background-color: greenyellow;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+.op{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 5px;
+}
+.op button{
+    width: 80px;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 35px;
+    outline: none;
+    border: 1px solid grey;
+    background-color: red;
+    font-weight: bold;
+    color: white;
+    transition: all 0.5s ease-in-out;
+    position: relative;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+.op button::before{
+    content: "Done";
+    transition: opacity 0.5s ease-in-out;
+}
+.op button:hover::before{
+    content: "\1F5D1";
+    font-size: 16px;
+}
+@media only screen and (max-width: 600px) {
+    .con {
+        height: auto;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .ip {
+        width: 90%;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+
+    input {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .ip button {
+        width: 30%;
+        font-size: 16px;
+    }
+
+    .op {
+        width: 90%;
+    }
+
+    .op button {
+        width: 30%;
+        font-size: 14px;
+        padding: 12px;
+    }
+}
