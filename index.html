@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do Task</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="con">
+        <h1>To-Do Manager</h1>
+        <div class="ip">
+            <input type="text" placeholder="Enter your Task Here..." id="user" required>
+            <button onclick="addtask()">Add</button>
+        </div>
+        <div class="op"></div>
+    </div>
+</body>
+    <script>
+        var output = document.querySelector(".op");
+        function addtask(){
+            var usertask = document.getElementById("user");
+            var div = document.createElement("div");
+            div.style.display="flex";
+            div.style.flexDirection="row";
+            div.style.justifyContent="space-between";
+            div.style.alignItems="center";
+            div.style.padding="13px";
+            div.style.border="2px solid #ccc";
+            div.style.borderRadius="25px"
+            div.style.width="100%";
+            div.style.fontSize="20px";
+            div.innerHTML=usertask.value+"<button onclick='del(event)'></button>";
+            output.append(div);
+        }
+        function del(event){
+            event.target.parentElement.remove();
+        }
+    </script>
+</html>
